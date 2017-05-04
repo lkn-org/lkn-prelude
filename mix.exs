@@ -5,14 +5,14 @@ defmodule LknPrelude.Mixfile do
     [
       app:             :lkn_prelude,
       name:            "lkn-prelude",
-      version:         "0.1.0",
+      version:         "0.1.1",
       elixir:          "~> 1.4",
       deps:            deps(),
       build_embedded:  Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       deps:            deps(),
       description:     description(),
-      source_url:      "https://nest.pijul.com/lthms/lkn-prelude:lkn-prelude-0.1.0",
+      source_url:      "https://nest.pijul.com/lthms/lkn-prelude:lkn-prelude-0.1.1",
       package:         package(),
       test_coverage:   [
         tool: ExCoveralls
@@ -69,7 +69,7 @@ defmodule LknPrelude.Mixfile do
         "GPL 3.0"
       ],
       links: %{
-        "Pijul Nest" => "https://nest.pijul.com/lthms/lkn-prelude:lkn-prelude-0.1.0",
+        "Pijul Nest" => "https://nest.pijul.com/lthms/lkn-prelude:lkn-prelude-0.1.1",
       },
     ]
   end

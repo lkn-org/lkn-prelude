@@ -7,7 +7,7 @@ use it.
 ## Guide
 
 Every module of this package is in the `Lkn.Prelude` namespace to avoid name
-collision. If one want to adopt our opinionated point of view, all she has to do
+collision. If one wants to adopt our opinionated point of view, all she has to do
 is to add the following line to her code:
 
 ```elixir
@@ -22,7 +22,7 @@ painlessly.
 ### Opaque data-structures and macro-based pattern matching
 
 In Elixir, it is not rare to see the most common data structure defined as
-tuples. For instance, a computation that may or may not return a result will
+tuples. For instance, a computation that may or may not return a value will
 effectively return `{ :ok, val } | :error`. As a consequence, the caller will
 have to match the result:
 
@@ -38,7 +38,7 @@ end
 From our perspective, it brings several issues. The main one is
 inconsistency. Some code might return `{:ok, val}` in case of success where
 other would return `{:some, val}`. Another is that it makes it harder to change
-the data structure implementation. For instance, what if one want to return a
+the data structure implementation. For instance, what if one wants to return a
 structure rather than a tuple, in order to implement the `Enumerable` protocol?
 
 This package takes another path. The data structure typespecs are opaque and the

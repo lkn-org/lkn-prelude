@@ -45,13 +45,13 @@ defmodule Lkn.Prelude.Option do
   The result of a computation which could have returned something but
   didn't.
   """
-  @opaque nothing()  :: :nothing
+  @type nothing()  :: :nothing
 
   @typedoc """
   The result of a computation which could have failed to return
   something but didn't.
   """
-  @opaque some(x)    :: {:some, x}
+  @type some(x)    :: {:some, x}
 
   @typedoc """
   The result of a computation which could have failed or could have
