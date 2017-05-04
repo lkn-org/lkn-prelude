@@ -1,0 +1,5 @@
+_build/
+cover/
+doc/
+deps/
+mix.lock
